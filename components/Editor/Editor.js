@@ -5,7 +5,7 @@ const EditorJs = dynamic(() => import('react-editor-js'), { ssr: false });
 
 let editorInstance;
 
-const CreateBlog = (props) => {
+const Editor = (props) => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [editorTools, setEditorTools] = useState();
@@ -86,4 +86,4 @@ const CreateBlog = (props) => {
   );
 };
 
-export default CreateBlog;
+export default Editor;
